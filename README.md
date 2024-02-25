@@ -18,7 +18,7 @@ The Quiz Application challenges users with multiple-choice questions from variou
 ### Usage:
 To use the Quiz Application, run the `quiz_Application.py` script. Answer the questions presented and receive feedback on your results at the end.
 
-## 3. Web Scraper
+## Web Scraper
 
 ### Description:
 The Web Scraper program extracts specific information from websites such as weather data. It utilizes Python libraries like Beautiful Soup or Scrapy to parse HTML content.
