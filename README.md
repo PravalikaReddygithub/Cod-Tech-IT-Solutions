@@ -1,6 +1,6 @@
 # Cod-Tech-IT-Solutions
 
-## CodTechItsolutions Internship 
+## CodtechItsolutions Internship 
 
 ## Password Generator
 
