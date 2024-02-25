@@ -1,4 +1,4 @@
-# Define question categories
+
 categories = {
     "history": [
         {"question": "Who is the first person to walk on the moon?", "choices": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Alan Shepard"], "answer": 1},
@@ -53,7 +53,6 @@ def ask_question(question):
         print("Invalid input. Please enter a number.")
         return False
 
-# Main program loop
 score = 0
 for category, questions in categories.items():
     print(f"\n** {category.upper()} Category:")
