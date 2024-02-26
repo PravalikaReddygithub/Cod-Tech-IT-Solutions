@@ -7,22 +7,22 @@ url = 'https://weather.com/en-IN/weather/today/l/b2e1f87fe0f7a92ba70229d148ad928
 # Send a GET request to the URL
 response = requests.get(url)
 
-# Parse the HTML content
+# Parsing the HTML content
 soup = BeautifulSoup(response.text, 'html.parser')
 
-# Find the location element
+# Finding the location element
 location_element = soup.find(class_='CurrentConditions--location--1YWj_')
 
-# Find the timestamp element
+# Finding the timestamp element
 timestamp_element = soup.find(class_='CurrentConditions--timestamp--1ybTk')
 
-# Find the temperature element
+# Finding the temperature element
 temperature_element = soup.find(class_='CurrentConditions--tempValue--MHmYY')
 
-# Find the weather phrase element
+# Finding the weather phrase element
 weather_phrase_element = soup.find(class_='CurrentConditions--phraseValue--mZC_p')
 
-# Extract text content from elements
+# Extracting text content from elements
 location = location_element.text if location_element else 'Location not available'
 timestamp = timestamp_element.text if timestamp_element else 'Timestamp not available'
 temperature = temperature_element.text if temperature_element else 'Temperature not available'
